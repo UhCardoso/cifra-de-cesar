@@ -1,0 +1,205 @@
+/* Geral */
+* {
+    font-family: Comfortaa;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #fff;
+    background-color: rgb(15, 15, 34);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    height: 200px;
+    background-color: #171a2b;
+    border-bottom: 2px solid #04d361;
+    margin-bottom: 25px;
+}
+header a {
+    text-decoration: none;
+}
+header h1 {
+    font-size: 3.4rem;
+    font-family: Skranji;
+    color: #04d361;
+}
+
+/* Página inicial */
+.title-inicial {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.area-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}
+.area-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #04d361;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*Pagina inicial small devices*/
+@media (max-width: 576px) {
+    header {
+        text-align: center;
+        padding: 0 10px;
+    }
+    header h1 {
+        font-size: 2.4rem;
+        font-family: Skranji;
+        color: #04d361;
+    }
+    .area-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .area-buttons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 300px;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        border: 2px solid #04d361;
+        background-color: #fff;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+/*pagina encryptar*/
+.area-input-code {
+   margin-bottom: 25px;
+   margin-left: 5%;
+}
+.area-input-code input {
+    margin-top: 10px;
+    border: 1px solid #04d361;
+    height: 25px;
+    text-align: center;
+}
+.area-encrypt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 350px;
+}
+.area-encrypt span {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.area-encrypt span h3 {
+    display: inline-block;
+}
+.area-encrypt span button {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    color: #04d361;
+    cursor: pointer;
+}
+.area-encrypt span button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.area-encrypt span button span {
+    font-size: 1rem;
+}
+.area-encrypt div {
+    width: 40%;
+}
+.area-encrypt div textarea {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #04d361;
+    margin-top: 10px;
+    background-color: #24273b;
+    color: #fff;
+}
+.area-encrypt div div {
+    background-color: violet;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #04d361;
+    margin-top: 10px;
+    background-color: #171a2b;
+}
+.button-copy {
+   
+}
+
+/*pagina encryptar small devices*/
+@media (max-width: 576px) {
+    .area-encrypt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    .area-encrypt div {
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .area-encrypt div textarea {
+        padding: 5px;
+        width: 96%;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid #04d361;
+        margin-top: 10px;
+        background-color: #24273b;
+        color: #fff;
+    }
+
+    .area-encrypt div div {
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #04d361;
+        margin-top: 10px;
+        background-color: #171a2b;
+    }
+}
